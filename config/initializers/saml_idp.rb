@@ -74,6 +74,13 @@ qfSISCmWPUE8KWriwf0HwaVLG/vJsk5j0Z+RSTHNyzEkLNzI7+1u
       "getter" => ->(principal) {
         principal.email
       }
+    },
+    "Role" => {
+      "name" => "role",
+      "name_format" => "urn:oasis:names:tc:SAML:2.0:attrname-format:basic",
+      "getter" => ->(principal) {
+        ["Admin", "User"].sample
+      }
     }
   }
 
