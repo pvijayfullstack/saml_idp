@@ -8,8 +8,12 @@ gem "coffee-rails", "~> 4.0.0"
 
 gem "spring",        group: :development
 
+gem "onelogin"
+gem "ruby-saml"
 gem "saml_idp"
 
 gem "devise"
 
 gem "pry-rails"
+gem 'pry-byebug'
+gem 'pry-stack_explorer'

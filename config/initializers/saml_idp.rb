@@ -79,13 +79,17 @@ qfSISCmWPUE8KWriwf0HwaVLG/vJsk5j0Z+RSTHNyzEkLNzI7+1u
       "name" => "role",
       "name_format" => "urn:oasis:names:tc:SAML:2.0:attrname-format:basic",
       "getter" => ->(principal) {
-        ["Admin", "User"].sample
+        ["The Big Sofa group client_admin", "The Big Sofa group client_users", "The Big Sofa group client_users"].sample
       }
     }
   }
 
   service_providers = {
     "http://localhost:3000" => {
+      fingerprint: "8C:FE:72:9A:C9:F1:F9:13:F0:B9:3F:27:E2:A3:8C:84:D4:95:92:CC:5F:5C:D1:47:A8:BF:F8:BA:7E:75:15:5B",
+      metadata_url: "http://my-service-provider.com/auth/saml/metadata"
+    },
+    "http://png.bigsofa.co.uk:3000" => {
       fingerprint: "8C:FE:72:9A:C9:F1:F9:13:F0:B9:3F:27:E2:A3:8C:84:D4:95:92:CC:5F:5C:D1:47:A8:BF:F8:BA:7E:75:15:5B",
       metadata_url: "http://my-service-provider.com/auth/saml/metadata"
     }
