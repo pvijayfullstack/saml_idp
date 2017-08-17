@@ -82,3 +82,11 @@ production:
   database: saml_idp_production
   username: saml_idp
   password: <%= ENV['SAML_IDP_DATABASE_PASSWORD'] %>
+
+  adapter: postgresql
+  encoding: unicode
+  # For details on connection pooling, see rails configuration guide
+  # http://guides.rubyonrails.org/configuring.html#database-pooling
+  pool: 5
+
+  timeout: 5000
