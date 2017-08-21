@@ -89,10 +89,10 @@ uRgJk4niWhBsfR063WEjvd5s8B6oV8EIoVX42RzzK9wGGkoPD88zKg==
       fingerprint: "8C:FE:72:9A:C9:F1:F9:13:F0:B9:3F:27:E2:A3:8C:84:D4:95:92:CC:5F:5C:D1:47:A8:BF:F8:BA:7E:75:15:5B",
       metadata_url: "http://my-service-provider.com/auth/saml/metadata"
     },
-    # "https://platform-staging-sso.bigsofa.co.uk" => {
-    #   fingerprint: "C0:60:8B:E1:C1:E5:71:FF:9A:0F:36:D2:81:14:C0:B5:F5:81:EC:0A:2C:D3:C4:BF:01:D2:36:70:79:8F:80:DD",
-    #   metadata_url: "https://platform-staging-sso.bigsofa.co.uk/saml/metadata"
-    # },
+    "https://platform-staging-sso.bigsofa.co.uk" => {
+      fingerprint: "C0:60:8B:E1:C1:E5:71:FF:9A:0F:36:D2:81:14:C0:B5:F5:81:EC:0A:2C:D3:C4:BF:01:D2:36:70:79:8F:80:DD",
+      metadata_url: "https://platform-staging-sso.bigsofa.co.uk/saml/metadata"
+    },
     "http://png.bigsofa.co.uk:3000" => {
       fingerprint: "B1:C6:21:02:5A:73:2B:E9:BC:54:68:DB:01:17:1E:03:31:6D:F2:92",
       metadata_url: "http://png.bigsofa.co.uk:3000/saml/metadata"
