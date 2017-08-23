@@ -3,5 +3,7 @@ class User < ActiveRecord::Base
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :recoverable, :rememberable, :trackable, :validatable
 
-  alias_method :external_id, :id
+  def external_id
+    email
+  end
 end
